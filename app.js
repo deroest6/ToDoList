@@ -116,7 +116,6 @@ app.post("/delete", function(req, res) {
     });
   }
 
-
 });
 
 
@@ -127,8 +126,6 @@ app.get("/:customListName", function(req, res) {
     if (!err) {
       if(!foundList) {
         //Create a new list
-
-
         const list = new List({
           name: customListName,
           items: defaultItems
@@ -138,25 +135,13 @@ app.get("/:customListName", function(req, res) {
         res.redirect("/" + customListName);
       } else {
         //Show an existing list
-
         res.render("list", {listTitle: foundList.name, foundItems: foundList.items} );
       }
     }
   });
 
-
-
-
 });
 
-
-
-// app.get("/work", function(req, res) {
-//   res.render("list", {
-//     listTitle: "Work List",
-//     newListItems: workItems
-//   });
-// });
 
 app.get("/about", function(req, res) {
   res.render("about");
@@ -166,7 +151,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
-app.listen(port);
 
 app.listen(port, function() {
   console.log("Server has started Succesfully!");
