@@ -2,9 +2,9 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const date = require(__dirname + "/date.js");
 const mongoose = require('mongoose');
 const _ = require("lodash");
+const date = require(__dirname + "/date.js");
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -26,15 +26,15 @@ const itemSchema = new mongoose.Schema({
 
 const Item = mongoose.model("Item", itemSchema);
 
-const item1 = new Item({
+const item1 = new Item ({
   name: "Welcome to your to do list!"
 });
 
-const item2 = new Item({
+const item2 = new Item ({
   name: "Hit the + button to add a new item."
 });
 
-const item3 = new Item({
+const item3 = new Item ({
   name: "<-- Hit this to delete an item"
 });
 
@@ -71,6 +71,7 @@ app.get("/", function(req, res) {
   });
 });
 
+
 app.post("/", function(req, res) {
 
   const itemName = req.body.newItem;
@@ -94,7 +95,6 @@ app.post("/", function(req, res) {
   }
 
 });
-
 
 
 app.post("/delete", function(req, res) {
