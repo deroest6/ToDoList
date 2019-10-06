@@ -8,6 +8,7 @@ html {
 h1 {
   color: #fff;
   padding: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .box {
@@ -49,7 +50,7 @@ p {
   font-size: 20px;
   font-weight: 200;
   color: #333333;
-  font-family: helvetica;
+  font-family: 'Raleway', sans-serif;
 }
 
 form.item {
