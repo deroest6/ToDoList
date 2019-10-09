@@ -1,5 +1,8 @@
 # ToDoList
+Dont procrastinate. Jot down your goals and tasks today with my list that can easily add and remove list items. 
 
-Built with love in Node.js
+### Web Technology Stack
+HTML, CSS, Bootstrap, Javascript, Node.js, MongoDB
 
-Dont Procrastinate... Do your to do's here: https://whatamidoingtodaylist.herokuapp.com/
+### Do Your ToDo's
+(https://whatamidoingtodaylist.herokuapp.com/) - ToDo's App
